@@ -1,0 +1,5 @@
+servers:
+  - splegg
+bungee:
+  pluginChannel: spleggChannel
+  serverName: lobby
