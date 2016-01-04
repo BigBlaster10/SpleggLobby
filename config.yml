@@ -3,3 +3,15 @@ servers:
 bungee:
   pluginChannel: spleggChannel
   serverName: lobby
+sign:
+  line1: 'Click to join!'
+  line2: '[%players%/%maxPlayers%]'
+  line3: '%gameState%'
+  line4: 'Map %map%'
+  PREGAME: 'Pre Game'
+  INGAME: 'In Game...'
+  OVER: 'Restarting...'
+  offlineLine1: '------------'
+  offlineLine2: 'OFFLINE'
+  offlineLine3: 'OFFLINE'
+  offlineLine4: '------------'

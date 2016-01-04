@@ -60,7 +60,7 @@ public class SpleggLobbyMain extends JavaPlugin implements PluginMessageListener
 			sign.setMaxPlayers(maxPlayers);
 			sign.setGameState(gameState);
 			sign.setMapName(map);
-			
+			sign.recieveMessage();
 			//Bukkit.broadcastMessage("Players: " + players);
 			//Bukkit.broadcastMessage("Max Players: " + maxPlayers);
 			//Bukkit.broadcastMessage("GameState: " + gameState);

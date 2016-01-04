@@ -39,6 +39,13 @@ public class SignListener implements Listener{
 		if(event.getAction().equals(Action.RIGHT_CLICK_BLOCK)){
 			if(SpleggSign.getSpleggSign(event.getClickedBlock().getLocation()) == null) return;
 			SpleggSign sign = SpleggSign.getSpleggSign(event.getClickedBlock().getLocation());
+			if(!sign.getGameState().equals("PREGAME")){
+				player.sendMessage(ChatColor.RED + "This game has already started!");
+				return;
+			}else if(sign.getPlayerCount() >= sign.getMaxPlayers()){
+				player.sendMessage(ChatColor.RED + "Server is full!");
+				return;
+			}
 			
 			ByteArrayDataOutput out = ByteStreams.newDataOutput();
             out.writeUTF("Connect");

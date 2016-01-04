@@ -22,7 +22,8 @@ public abstract class Updateable {
 	static int totalTicks = 1;
 	public static void updateUpdateables(){
 		
-		for(Updateable update : updates){
+		for(int i = updates.size()-1; i>= 0; i--){
+			Updateable update = Updateable.updates.get(i);
 			update.currentTicks++;
 			if(update.currentTicks >= update.ticks){
 				update.currentTicks = 0;
@@ -37,5 +38,8 @@ public abstract class Updateable {
 		this.ticks = ticks;
 	}
 	
+	public void remove(){
+		updates.remove(this);
+	}
 	
 }
