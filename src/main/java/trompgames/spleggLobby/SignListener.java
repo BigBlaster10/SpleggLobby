@@ -48,10 +48,10 @@ public class SignListener implements Listener{
 			}
 			
 			ByteArrayDataOutput out = ByteStreams.newDataOutput();
-            out.writeUTF("Connect");
-            out.writeUTF(sign.getServerName()); 
-            player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());		
-            player.sendMessage(ChatColor.GREEN + "Connecting to " + sign.getServerName() + "...");
+            		out.writeUTF("Connect");
+            		out.writeUTF(sign.getServerName()); 
+            		player.sendPluginMessage(plugin, "BungeeCord", out.toByteArray());		
+            		player.sendMessage(ChatColor.GREEN + "Connecting to " + sign.getServerName() + "...");
 			
 		}
 	}
