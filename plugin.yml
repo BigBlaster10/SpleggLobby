@@ -2,3 +2,4 @@ name: SpleggLobby
 main: main.java.trompgames.spleggLobby.SpleggLobbyMain
 version: 1.0
 commands:
+  stats:
